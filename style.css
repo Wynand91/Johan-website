@@ -1,0 +1,109 @@
+
+body {
+  background-color: maroon;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #cc9900;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#nav-logo {
+  height: 40px;
+  width: 40px;
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  color: #444;
+  display: inline-block;
+  margin-left: 70px;
+  margin-right: 20px;
+  padding-top: 12px;
+  position: relative;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+nav a:hover {
+  color: #898989;
+}
+
+nav li a::before {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: #000;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav li a:hover::before {
+  width: 100%;
+}
+
+
+#banner {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+hr {
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+#logo {
+  display: inline;
+  height: 300px;
+  width: 300px;
+}
+
+#banner-h1 {
+  font-family: 'Crimson Text', serif;
+  display: inline;
+  position: relative;
+  bottom: 130px;
+  font-size: 40px;
+}
+
+.mini-gal {
+  display: inline;
+  height: 300px;
+  width: 330px;
+}
