@@ -77,23 +77,23 @@ nav li a:hover::before {
   width: 100%;
 }
 
-
-#banner {
-  width: 60%;
-  margin: 0 auto;
+#jumbotron {
   margin-top: 50px;
+}
+
+#logo {
+  display: block;
+  margin-top: 50px;
+  margin: 0 auto;
 }
 
 hr {
   width: 70%;
-  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-#logo {
-  display: inline;
-  height: 300px;
-  width: 300px;
-}
+
 
 #banner-h1 {
   font-family: 'Crimson Text', serif;
@@ -120,6 +120,28 @@ hr {
   height: 290px;
   width: 320px;
   margin-left: 10px;
+}
+
+#slide-holder {
+  width: 45%;
+  height: 500px;
+  float: left;
+}
+
+#slide-holder h1 {
+  color:#ffd699;
+  text-align: center;
+}
+
+#slide {
+  background-image: url("pics/facts/1.jpg");
+  background-size: cover;
+  height: 300px;
+  width: 500px;
+  border: 5px solid black;
+  margin: 0 auto;
+  vertical-align: middle;
+  margin-top: 50px;
 }
 
 #about {
