@@ -1,29 +1,36 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Johan's Electric</title>
     <link href="style.css" type="text/css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <meta name="viewport" content="width=device-width" />
   </head>
   <body>
 
     <header>
+      <h1 id="h1-logo">Johan's Electric</h1> <!--for web crawler to read-->
       <div class="container">
         <a href="#banner"><img src="pics/Logo.png" alt="Logo" id="nav-logo"/></a>
         <nav>
-          <ul>
+          <h2>Main Navigation</h2><!--for web crawler to read-->
+          <div id="burger-nav">
+
+          </div>
+          <ul id="un-li">
             <li><a href="#about">About Us</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#hours">Business Hours</a></li>
-            <li><a href="pdf/JohansElecProfile.pdf">Company Profile</a></li>
+            <li><a href="pdf/JESCompanyProfile.pdf" target="_blank">Company Profile</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
         </nav>
       </div>
     </header>
-
+  <main class="wrapper">
     <div id="jumbotron">
+      <!--change to picture element-->
       <img src="pics/logoMain.png" alt="Logo" id="logo"/>
     </div>
 
@@ -34,13 +41,14 @@
     </div>
 
 
-<hr />
+<hr id="first-hr"/>
 
     <div id="mini-gallery">
       <img src="pics/house1.jpg" class="mini-gal"/>
       <img src="pics/house3.jpg" class="mini-gal"/>
       <img src="pics/house2.jpg" class="mini-gal"/>
-      <img src="pics/house4.jpg" class="mini-gal"/>
+      <!--<img src="pics/house4.jpg" class="mini-gal"/>
+    -->
     </div>
 
 <hr />
@@ -50,7 +58,7 @@
       <div id="slide"></div>
     </div>
 
-    <div id="about">
+    <section id="about">
       <h1>ABOUT US</h1>
       <p>
         We are based in Strand, providing services throughout Helderberg and its surrounding areas.<br />
@@ -59,19 +67,19 @@ Quality workmanship, dedication, professionalism and attention to detail is some
 Our mission is simple - provide our clients with services like no other company can<br /><br />
 Our qualified team is always ready to assist!
       </p>
-    </div>
+    </section>
 
 <hr />
-        <div id="mini-gallery">
-          <img src="pics/house5.jpg" class="mini-gal"/>
-          <img src="pics/house6.jpg" class="mini-gal"/>
-          <img src="pics/house7.jpg" class="mini-gal"/>
-          <img src="pics/house8.jpg" class="mini-gal"/>
-        </div>
+      <div id="mini-gallery">
+        <img src="pics/house5.jpg" class="mini-gal"/>
+        <img src="pics/house6.jpg" class="mini-gal"/>
+        <img src="pics/house7.jpg" class="mini-gal"/>
+        <!--<img src="pics/house8.jpg" class="mini-gal"/>-->
+      </div>
 
 <hr />
 
-    <div id="services">
+    <section id="services">
       <h1>SERVICES WE OFFER</h1>
       <p>
         We are serious when we say "No job too big or too small"<br />
@@ -86,8 +94,7 @@ Our qualified team is always ready to assist!
         -INSTALLATION OF LED'S<br />
         -GEYSER REPAIRS<br />
         -STOVE CONNECTIONS<br />
-        -GENERATOR INSTALLATIONS AND <br />
-        &nbsp SERVICING
+        -GENERATOR INSTALLATIONS AND SERVICING
       </p>
       <p id="col-2">
         -INDUSTRIAL FACTORY INSTALLATIONS<br />
@@ -96,57 +103,58 @@ Our qualified team is always ready to assist!
         -SCHOOLS<br />
         -CLINICS<br />
         -GOLF AND HOUSING ESTATES<br />
-        -TESTING AND COMMISSIONING OF ALL<br />
-        &nbsp INSTALLATIONS
+        -TESTING AND COMMISSIONING OF ALL INSTALLATIONS
       </p>
+    </section>
+
+<hr />
+
+    <div id="mini-gallery">
+      <img src="pics/house9.jpg" class="mini-gal"/>
+      <img src="pics/house10.jpg" class="mini-gal"/>
+      <!--<img src="pics/house11.jpg" class="mini-gal"/>-->
+      <img src="pics/house12.jpg" class="mini-gal"/>
     </div>
 
 <hr />
 
-      <div id="mini-gallery">
-        <img src="pics/house9.jpg" class="mini-gal"/>
-        <img src="pics/house10.jpg" class="mini-gal"/>
-        <img src="pics/house11.jpg" class="mini-gal"/>
-        <img src="pics/house12.jpg" class="mini-gal"/>
-      </div>
-
-<hr />
-
-    <div id="hours">
+    <section id="hours">
       <h1>HOURS</h1>
       <p>
         We are available 24/7.
       </p>
+    </section>
+
+<hr />
+
+    <div id="mini-gallery">
+      <!--<img src="pics/house13.jpg" class="mini-gal"/>-->
+      <img src="pics/house14.jpg" class="mini-gal"/>
+      <img src="pics/house15.jpg" class="mini-gal"/>
+      <img src="pics/house16.jpg" class="mini-gal"/>
     </div>
 
 <hr />
 
-      <div id="mini-gallery">
-        <img src="pics/house13.jpg" class="mini-gal"/>
-        <img src="pics/house14.jpg" class="mini-gal"/>
-        <img src="pics/house15.jpg" class="mini-gal"/>
-        <img src="pics/house16.jpg" class="mini-gal"/>
-      </div>
-
-<hr />
-
-    <div id="contact">
+    <section id="contact">
       <h1>CONTACT US</h1>
       <p>
         PHONE: 072 828 8169 <br />
         EMAIL: info@johanselec.co.za
       </p>
-    </div>
+    </section>
+  </main>
+
 <hr id="hr-footer"/>
-    <footer>
-      <p id="copyright">
-        &copy
-      </p>
-      <p>
+
+  <footer>
+    <p id="copyright">&copy</p>
+    <p>
         All content belong to Johan's Electrical Services Helderberg (PTY) LTD.<br />
         Website created by: Wynand Theron (wtheron2@yahoo.com)
-      </p>
-    </footer>
+    </p>
+  </footer>
+
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="main.js"></script>
   </body>
