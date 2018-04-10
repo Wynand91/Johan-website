@@ -350,6 +350,13 @@ footer {
 }
 
 
+@media screen and (max-width: 710px) {
+  header nav li a {
+    font-size: 12px;
+  }
+}
+
+
 @media screen and (max-width: 480px) {
 
   header nav li {
