@@ -409,11 +409,18 @@ footer {
   }
 
   #col-1 {
+    text-align: center;
+    width: 100%;
     font-size: 10px;
+    float: none;
+    margin-left: 0;
   }
 
   #col-2 {
+    text-align: center;
+    width: 100%;
     font-size: 10px;
+    float: none;
   }
 
   #hours {
