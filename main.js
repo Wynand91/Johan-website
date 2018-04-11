@@ -25,7 +25,7 @@ setInterval(changeColor,10000);
 
 
   function randomNum() {
-    return Math.floor(Math.random() * (7 - 1 + 1)) + 1;
+    return Math.floor(Math.random() * (9 - 1 + 1)) + 1;
   };
 
 });
