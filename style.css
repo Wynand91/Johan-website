@@ -452,4 +452,9 @@ footer {
     height: auto;
   }
 
+  #slide-holder {
+    height: 0;
+    overflow: hidden;
+  }
+
 }
